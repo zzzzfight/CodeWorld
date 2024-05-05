@@ -9,7 +9,14 @@
 >
 > [character device drivers](https://linux-kernel-labs.github.io/refs/heads/master/labs/device_drivers.html)
 >
+> [The Linux Kernel Driver Interface](https://github.com/torvalds/linux/blob/master/Documentation/process/stable-api-nonsense.rst)
+>
 > [why is good to have all drivers in the kernel](https://www.reddit.com/r/linuxquestions/comments/ke76qa/why_is_it_good_to_have_all_drivers_in_the_kernel/?rdt=54989&onetap_auto=true&one_tap=true)
+* 总结来说就是微内核/宏内核这两种观念：
+   * 微内核（类似Minix）的架构是 硬件=>内核=>驱动 驱动部署在应用层，好处是内核与驱动隔离（内核不会受驱动影响）
+   * 宏内核（类似Linux）的架构师 硬件=>内核，驱动耦合在内核之中，~~逻辑在于，驱动是从属于内核的，为内核提供操作外设硬件的方式，而非直接对用户提供接口~~（操作系统的定义）（这个往内核与驱动的概念引申了）
+   * [The Tanenbaum-Torvalds Debate about device](https://www.oreilly.com/openbook/opensources/book/appa.html)
+
 
 
 * 字符设备类似于audio，显卡，键盘鼠标
@@ -23,6 +30,9 @@
    3. 对设备描述符设置flag或者load进就绪队列？（这些最终都是抽象成设备就绪，通知应用层可读写）
    4. （最终抽象成 应用层操作 => 调用驱动 => 设备执行修改）
 
+
+
 > 理解
 ### 1. character device
+
 ### 2. block device
