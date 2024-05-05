@@ -1,7 +1,16 @@
 ## Character Device vs Block Device
-> [how do character device or character special files work](https://unix.stackexchange.com/questions/37829/how-do-character-device-or-character-special-files-work)
+> [how do character device or character special files work](https://unix.stackexchange.com/questions/37829/how-do-character-device-or-character-special-files-work) ✔
 > 
-> [what is a character device](https://askubuntu.com/questions/1021394/what-is-a-character-device)
+> [what is a character device](https://askubuntu.com/questions/1021394/what-is-a-character-device) ✔
+>
+> [device driver basic](https://tldp.org/LDP/khg/HyperNews/get/devices/basics.html)
+>
+> [device file](https://en.wikipedia.org/wiki/Device_file)
+>
+> [character device drivers](https://linux-kernel-labs.github.io/refs/heads/master/labs/device_drivers.html)
+>
+> [why is good to have all drivers in the kernel](https://www.reddit.com/r/linuxquestions/comments/ke76qa/why_is_it_good_to_have_all_drivers_in_the_kernel/?rdt=54989&onetap_auto=true&one_tap=true)
+
 
 * 字符设备类似于audio，显卡，键盘鼠标
 * 块设备，具有输出缓冲和存储数据能力的设备 
