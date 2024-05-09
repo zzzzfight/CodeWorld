@@ -15,7 +15,7 @@
 * 总结来说就是微内核/宏内核这两种观念：
    * 微内核（类似Minix）的架构是 硬件=>内核=>驱动 驱动部署在应用层，好处是内核与驱动隔离（内核不会受驱动影响）
    * 宏内核（类似Linux）的架构师 硬件=>内核，驱动耦合在内核之中，~~逻辑在于，驱动是从属于内核的，为内核提供操作外设硬件的方式，而非直接对用户提供接口~~（操作系统的定义）（这个往内核与驱动的概念引申了）
-   * [The Tanenbaum-Torvalds Debate about device](https://www.oreilly.com/openbook/opensources/book/appa.html)
+   * [The Tanenbaum-Torvalds Debate about device](../Other/device_debate.md)
 
 
 
@@ -33,6 +33,8 @@
 
 
 > 理解
+
+
 ### 1. character device
 
 ### 2. block device
