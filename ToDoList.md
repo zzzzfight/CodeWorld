@@ -7,7 +7,14 @@
 * IIC学习总结 ×
 
 >  2024.5.14
-* IIC
-* XIP
+* IIC x
+* XIP x
+* UIO x
+* FLASH x
+
+> 2024.5.16
+* IIC   ✔
+* XIP   ✔
 * UIO
-* FLASH
+* FLASH ✔
+

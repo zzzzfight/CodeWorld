@@ -3,7 +3,7 @@
 > General IIC Operation （feature）
 
 
-### feature
+### 1. feature
 1. 不同设备共享同一套I2C总线，具有不同地址
 2. 从机只有在主机寻址到从机时才对主机进行数据传输（双端通讯，但是主机绝对主导）
 3. 许多从属设备将需要在启动时进行配置，以设置设备的行为（需要预先配置）
@@ -23,18 +23,20 @@
     * 接受数据
     * 发送STOP状态
 
-#### START Condition
+### 2. Transfer
+![IIC Transfer](../picture/IIC_Transfer.png)
+
+#### 2.1 START Condition
 * IIC通讯的初始化由master发送START条件开始
 * SCL线保持高位
 * SDA线由高到低
 
-#### Repeated START Condition
+#### 2.2 Repeated START Condition
+* 类似START Condition
+
+#### 2.3 STOP Condition
+* 每个字节（byte）后都会跟着一个来自接收方的ACK bit，表明成功接收数据
+* 在
 
 
-
-
-
-#### STOP Condition
-*
-
-
+![IIC_datatransfer.png](../picture/IIC_datatransfer.png)
